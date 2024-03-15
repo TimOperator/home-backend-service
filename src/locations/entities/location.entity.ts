@@ -1,6 +1,6 @@
-import { Condition } from "src/conditions/entities/condition.entity";
-import { AbstractEntity } from "src/database/abstract.entity";
-import { Systemstatus } from "src/systemstatus/entities/systemstatus.entity";
+import { Condition } from "../../conditions/entities/condition.entity";
+import { AbstractEntity } from "../../database/abstract.entity";
+import { Systemstatus } from "../../systemstatus/entities/systemstatus.entity";
 import { Column, Entity, OneToMany } from "typeorm";
 
 @Entity()

@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { AuthModule } from './auth/auth.module';
-import { UserModule } from './user/user.module';
+//import { AuthModule } from 'src/auth/auth.module';
+//import { UserModule } from './user/user.module';
 import { LocationsModule } from './locations/locations.module';
 import { ConfigModule } from '@nestjs/config';
 import { DataSource } from 'typeorm';
@@ -12,8 +12,8 @@ import { SystemstatusModule } from './systemstatus/systemstatus.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true}),
     DatabaseModule,
-    AuthModule,
-    UserModule,
+//    AuthModule,
+//    UserModule,
     LocationsModule,
     ConditionsModule,
     SystemstatusModule,

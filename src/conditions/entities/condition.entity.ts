@@ -1,5 +1,5 @@
-import { AbstractEntity } from "src/database/abstract.entity";
-import { Location } from "src/locations/entities/location.entity";
+import { AbstractEntity } from "../../database/abstract.entity";
+import { Location } from "../../locations/entities/location.entity";
 import { Column, Entity, ManyToOne } from "typeorm";
 
 @Entity()

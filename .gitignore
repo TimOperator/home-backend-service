@@ -5,6 +5,7 @@
 
 # Personal documentation and configuration
 /configuration
+/migrations
 
 # Docker database volume
 /db-data
