@@ -1,5 +1,6 @@
 import { Condition } from "src/conditions/entities/condition.entity";
 import { AbstractEntity } from "src/database/abstract.entity";
+import { Systemstatus } from "src/systemstatus/entities/systemstatus.entity";
 import { Column, Entity, OneToMany } from "typeorm";
 
 @Entity()
@@ -12,4 +13,7 @@ export class Location extends AbstractEntity<Location> {
 
     @OneToMany(() => Condition, (condition) => condition.location)
     conditions: Condition[];
+
+    @OneToMany(() => Systemstatus, (systemstatus) => systemstatus.location)
+    systemstatus: Systemstatus[];
 }

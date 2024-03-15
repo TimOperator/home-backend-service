@@ -8,7 +8,7 @@ export class ConditionsController {
   constructor(private readonly conditionsService: ConditionsService) {}
 
   @Post()
-  create(@Body() createConditionDto: CreateConditionDto) {
+  async create(@Body() createConditionDto: CreateConditionDto) {
     return this.conditionsService.create(createConditionDto);
   }
 

@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { CreateConditionDto } from './dto/create-condition.dto';
-import { UpdateConditionDto } from './dto/update-condition.dto';
 import { EntityManager, Repository } from 'typeorm';
 import { Condition } from './entities/condition.entity';
 import { InjectRepository } from '@nestjs/typeorm';

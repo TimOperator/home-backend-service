@@ -22,6 +22,6 @@ export class Condition extends AbstractEntity<Condition> {
     @Column()
     wind_deg: number;
 
-    @ManyToOne(() => Location, (location) => location.conditions, { cascade:true })
+    @ManyToOne(() => Location, (location) => location.conditions, { cascade: true })
     location: Location;
 }

@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { DataSource } from 'typeorm';
 import { DatabaseModule } from './database/database.module';
 import { ConditionsModule } from './conditions/conditions.module';
+import { SystemstatusModule } from './systemstatus/systemstatus.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { ConditionsModule } from './conditions/conditions.module';
     UserModule,
     LocationsModule,
     ConditionsModule,
+    SystemstatusModule,
   ],
 })
 export class AppModule {
