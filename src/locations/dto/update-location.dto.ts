@@ -1,7 +1,7 @@
 import { PartialType } from '@nestjs/mapped-types';
-import { CreateLocationsDto } from './create-locations.dto';
+import { CreateLocationDto } from './create-location.dto';
 
-export class UpdateLocationsDto {
+export class UpdateLocationDto {
     city: string;
     location: string;
 }

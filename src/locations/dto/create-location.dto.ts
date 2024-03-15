@@ -1,4 +1,4 @@
-export class CreateLocationsDto {
+export class CreateLocationDto {
     city: string;
     location: string;
 }
